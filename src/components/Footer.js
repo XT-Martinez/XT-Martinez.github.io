@@ -36,8 +36,8 @@ class Footer extends Component {
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 center-xs center-sm center-md center-lg">
 							<br />
 							<small>
-								Copyright &#9400; 2019 | Christian Joel M. Martinez | All Rights
-								Reserved
+								Copyright &#9400; 2019 <span className="primary-text">|</span>{" "}
+								Christian Joel M. Martinez
 								<br />
 								Background image from{" "}
 								<a

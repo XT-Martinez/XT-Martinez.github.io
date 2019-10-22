@@ -27,7 +27,7 @@ class Navbar extends Component {
 							<nav id="NavLinks">
 								<ul>
 									<li>
-										<a href="#Profile" className="active">
+										<a href="#Profile" className="">
 											<i className="fa fa-user"></i>
 											<br />
 											About Me

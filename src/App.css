@@ -4,7 +4,7 @@ html {
 
 body {
 	padding: 0px;
-	padding-top: 60px;
+	/* padding-top: 60px; */
 	margin: 0;
 	font-family: "Heebo", "Open Sans", sans-serif;
 	background-color: #fff;
@@ -22,6 +22,11 @@ a {
 
 .secondary-text {
 	color: #808080;
+}
+
+.title {
+	text-align: center;
+	font-size: 2.5rem;
 }
 
 .card {
