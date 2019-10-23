@@ -30,21 +30,21 @@ class Navbar extends Component {
 										<a href="#Profile" className="">
 											<i className="fa fa-user"></i>
 											<br />
-											About Me
+											About
 										</a>
 									</li>
 									<li>
 										<a href="#Skills">
 											<i className="fa fa-code"></i>
 											<br />
-											Core Skills
+											Skills
 										</a>
 									</li>
 									<li>
 										<a href="#Contact">
 											<i className="fa fa-phone"></i>
 											<br />
-											Contact Me
+											Contact
 										</a>
 									</li>
 									{/* <li>

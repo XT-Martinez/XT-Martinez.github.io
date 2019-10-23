@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import DP from "../assets/DP.jpg";
 import "./Profile.css";
+// import backgroundImage from "../assets/background.jpg";
 
 class Profile extends Component {
 	render() {
 		return (
+			// <div id="Profile" style={{ backgroundImage: `url(${backgroundImage})` }}>
 			<div id="Profile">
 				<div className="container container-fluid">
 					{/* <h1 className="title">About Me</h1> */}
