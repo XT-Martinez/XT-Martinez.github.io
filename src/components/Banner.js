@@ -10,16 +10,17 @@ class Banner extends Component {
 	render() {
 		return (
 			<div id="Banner" style={this.style}>
-				<h1 className="banner-text">
+				<div className="banner-text">
 					<div className="banner-text-header" style={this.style}>
-						<span>
-							CHRISTIAN <br /> MARTINEZ
-						</span>
-						<a href="#Profile" className="banner-text-button">
-							More About Me
-						</a>
+						<div className="container container-fluid">
+							<span>CHRISTIAN</span>
+							<span>MARTINEZ</span>
+							<a href="#Profile" className="banner-text-button">
+								More About Me
+							</a>
+						</div>
 					</div>
-				</h1>
+				</div>
 			</div>
 		);
 	}
