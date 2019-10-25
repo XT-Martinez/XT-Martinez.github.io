@@ -3,6 +3,10 @@ body {
 	height: 100%;
 }
 
+body {
+	padding-top: 70px !important;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -20,6 +24,12 @@ a {
 	text-decoration: none;
 }
 
+table,
+td,
+th {
+	vertical-align: top;
+}
+
 /* Common Class */
 .primary-text {
 	color: #83a036;
@@ -34,11 +44,49 @@ a {
 	font-size: 2.5rem;
 }
 
+.btn {
+	color: #fff;
+	display: inline-block;
+	font-weight: 400;
+	font-size: 1rem;
+	padding: 10px 15px;
+	border-radius: 1rem;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 0.25rem;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+		inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+		inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
+		inset 0 -1px 0 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.btn:active {
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05),
+		inset 0 1px 0 0 rgba(0, 0, 0, 0.2), inset 0 -1px 0 0 rgba(0, 0, 0, 0.1),
+		inset 0 -1px 0 0 rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.btn-primary {
+	background-color: #83a036;
+}
+
+.btn-danger {
+	background-color: #ca3737;
+}
+
 .card {
 	background-color: #fff;
 	box-shadow: 0px 0px 15px #3d3d3d;
 	border-radius: 0.25rem;
-
+	color: #555;
 	background-color: var(--silver-100);
 	background-origin: border-box;
 	background-position: 50%;
@@ -49,21 +97,35 @@ a {
 		inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
 		inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
 		inset 0 -1px 0 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.7);
-	margin-bottom: 1rem;
-	margin-top: 1rem;
+	padding: 1.2rem;
+}
+
+.card h2 {
+	border-left: 5px solid #83a036;
+	padding-left: 10px;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0 !important;
+}
+
+.end-xs .card h2,
+.end-sm .card h2,
+.end-md .card h2,
+.end-lg .card h2 {
+	border-left: none;
+	padding-left: 0;
+	border-right: 5px solid #83a036;
+	padding-right: 10px;
 }
 
 .card .card-header {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-	/* padding: 10px; */
-}
-
-.card .card-body {
-	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .card .card-footer {
-	border-top: 1px solid #959595;
+	border-top: 1px solid rgba(0, 0, 0, 0.15);
+	padding-top: 10px;
 }
 
 .container {

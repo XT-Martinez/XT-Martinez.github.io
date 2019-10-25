@@ -1,3 +1,7 @@
+#Skills {
+	/* background-color: #e2c8b7; */
+}
+
 #Skills .skill-icon {
 	font-size: 3rem;
 	margin-top: 15px;
@@ -5,8 +9,8 @@
 }
 
 #Skills .star-scale {
-	color: #eec81d;
 	font-size: 1.5rem;
+	color: #eec81d;
 	margin-top: 10px;
 	vertical-align: middle;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);

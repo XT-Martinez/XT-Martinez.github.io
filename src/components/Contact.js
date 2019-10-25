@@ -29,6 +29,7 @@ class Contact extends Component {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="icon-link"
+						title="Facebook"
 					>
 						<i className="fa fa-facebook circle-icon"></i>
 					</a>
@@ -38,6 +39,7 @@ class Contact extends Component {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="icon-link"
+						title="Twitter"
 					>
 						<i className="fa fa-twitter circle-icon"></i>
 					</a>
@@ -47,6 +49,7 @@ class Contact extends Component {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="icon-link"
+						title="GitHub Repository"
 					>
 						<i className="fa fa-github circle-icon"></i>
 					</a>
@@ -56,6 +59,7 @@ class Contact extends Component {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="icon-link"
+						title="LinkedIn"
 					>
 						<i className="fa fa-linkedin circle-icon"></i>
 					</a>

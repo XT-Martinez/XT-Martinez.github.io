@@ -1,77 +1,63 @@
 import React, { Component } from "react";
 import "./Navbar.css";
 import avatar from "../assets/DP.jpg";
+import ClassNames from "classnames";
 
 class Navbar extends Component {
+	state = {
+		burgerMenuToggle: false
+	};
+
+	handleBurgerMenuToggle = e => {
+		this.setState({ burgerMenuToggle: !this.state.burgerMenuToggle });
+	};
+
 	render() {
+		let navLinksClassName = ClassNames("nav-links", {
+			"mini-active": this.state.burgerMenuToggle
+		});
 		return (
 			<header id="Navbar">
 				<div className="container container-fluid">
-					<div className="row middle-xs middle-sm middle-md middle-lg">
-						{/* Header banner */}
-						<div className="col-xs-2 col-sm-5 col-md-8 col-lg-8 start-xs start-sm start-md start-lg">
-							<div className="banner">
-								<img src={avatar} alt="" />
-								<div className="banner-lg">
-									Christian <span className="primary-text">Martinez</span>
-									{/* <br /> */}
-									<small>Aspiring Full-Stack Web Developer</small>
-								</div>
-								<div className="banner-sm">
-									C<span className="primary-text">M</span>
-								</div>
+					{/* Header banner */}
+					<div className="nav-wrapper">
+						<div className="banner">
+							<img src={avatar} alt="" />
+							<div className="banner-lg">
+								Christian <span className="primary-text">Martinez</span>
+								{/* <br /> */}
+								<small>Aspiring Full-Stack Web Developer</small>
+							</div>
+							<div className="banner-sm">
+								C<span className="primary-text">M</span>
 							</div>
 						</div>
 						{/* Links */}
-						<div className="col-xs-10 col-sm-7 col-md-4 col-lg-4 center-xs end-sm end-md end-lg">
-							<nav id="NavLinks">
-								<ul>
-									<li>
-										<a href="#Profile" className="">
-											<i className="fa fa-user"></i>
-											<br />
-											About
-										</a>
-									</li>
-									<li>
-										<a href="#Skills">
-											<i className="fa fa-code"></i>
-											<br />
-											Skills
-										</a>
-									</li>
-									<li>
-										<a href="#Contact">
-											<i className="fa fa-phone"></i>
-											<br />
-											Contact
-										</a>
-									</li>
-									{/* <li>
-										<a
-											href="https://github.com/XT-Martinez/"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<i className="fa fa-github"></i>
-											<br />
-											Github
-										</a>
-									</li>
-									<li>
-										<a
-											href="https://www.linkedin.com/in/christian-joel-martinez-20969a109/"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<i className="fa fa-linkedin"></i>
-											<br />
-											LinkedIn
-										</a>
-									</li> */}
-								</ul>
-							</nav>
-						</div>
+						<nav className={navLinksClassName}>
+							<div
+								className="hamburger-btn"
+								onClick={this.handleBurgerMenuToggle}
+							>
+								<i className="fa fa-bars "></i>
+							</div>
+							<ul className="link-list">
+								<li>
+									<a href="#Profile">
+										<i className="fa fa-id-card-o"></i> About
+									</a>
+								</li>
+								<li>
+									<a href="#Skills">
+										<i className="fa fa-code"></i> Skills
+									</a>
+								</li>
+								<li>
+									<a href="#Contact">
+										<i className="fa fa-phone"></i> Contact
+									</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</header>
