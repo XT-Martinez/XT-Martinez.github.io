@@ -43,17 +43,17 @@ class Navbar extends Component {
 							<ul className="link-list">
 								<li>
 									<a href="#Profile">
-										<i className="fa fa-user"></i> About Me
+										<i className="fa fa-id-card-o"></i> About
 									</a>
 								</li>
 								<li>
 									<a href="#Skills">
-										<i className="fa fa-code"></i> Core Skills
+										<i className="fa fa-code"></i> Skills
 									</a>
 								</li>
 								<li>
 									<a href="#Contact">
-										<i className="fa fa-phone"></i> Contact Me
+										<i className="fa fa-phone"></i> Contact
 									</a>
 								</li>
 							</ul>

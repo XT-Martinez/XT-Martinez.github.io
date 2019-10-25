@@ -1,12 +1,13 @@
 #Navbar {
 	background-color: rgba(255, 255, 255, 1);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	/* border-bottom: 1px solid rgba(0, 0, 0, 0.15); */
 	width: 100%;
 	top: 0;
 	position: absolute;
 	font-weight: bold;
 	z-index: 10;
 	box-sizing: border-box;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .nav-wrapper {
@@ -78,15 +79,15 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
-	margin-left: -5px;
-	margin-right: -5px;
+	margin-left: -10px;
+	margin-right: -10px;
 	flex-grow: 1;
 }
 
 .nav-links li {
 	list-style: none;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .nav-links ul a {
@@ -138,7 +139,8 @@
 		margin-right: 0px;
 		margin-top: 70px;
 		top: 0;
-		transition: max-height 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		transition: max-height 0.3s ease-in-out;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
 		max-height: 0;
 		overflow: hidden;
 	}
@@ -153,7 +155,6 @@
 
 	.nav-links.mini-active ul {
 		max-height: 500px;
-		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
 	}
 
 	.nav-links ul li {
@@ -177,7 +178,8 @@
 	}
 
 	.nav-links ul li a .fa {
-		width: 20px;
+		width: 30px;
+		text-align: center;
 	}
 
 	.nav-links ul li a:hover,

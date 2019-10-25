@@ -15,7 +15,7 @@ class Banner extends Component {
 						<div className="container container-fluid">
 							<span>CHRISTIAN</span>
 							<span>MARTINEZ</span>
-							<a href="#Profile" className="banner-text-button">
+							<a href="#Profile" className="btn btn-primary">
 								More About Me
 							</a>
 						</div>
