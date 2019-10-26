@@ -24,7 +24,7 @@ class Footer extends Component {
 						</div>
 						{/* Footer Column 3 */}
 						<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 center-xs center-sm start-md start-lg">
-							<h3>About this site</h3>
+							<h3>Other Projects</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								Laboriosam quam eos praesentium corrupti deleniti error libero,
@@ -35,7 +35,7 @@ class Footer extends Component {
 						{/* Copyright */}
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 center-xs center-sm center-md center-lg">
 							<br />
-							<small>
+							<small className="copyright">
 								&#9400; 2019 <span className="primary-text">|</span> Christian
 								Joel M. Martinez
 								<br />

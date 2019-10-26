@@ -1,30 +1,51 @@
 import React, { Component } from "react";
-import DP from "../assets/DP.jpg";
-import Ragnarok from "../assets/ragnarok.jpg";
+// import DP from "../assets/DP.jpg";
+import DP from "../assets/dp2.jpg";
+import ResumePDF from "../assets/Christian_Martinez-Resume.pdf";
 import "./Profile.css";
-// import backgroundImage from "../assets/background.jpg";
 
 class Profile extends Component {
 	render() {
 		return (
-			// <div id="Profile" style={{ backgroundImage: `url(${backgroundImage})` }}>
 			<div id="Profile">
 				<div className="container container-fluid">
 					{/* <h1 className="title">About Me</h1> */}
 					<div className="row">
 						<div className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+							<div className="row" id="About">
+								<div className="col-xs-12 col-sm-3 col-md-3 col-lg-2 center-xs start-sm">
+									<div className="img-frame">
+										<img src={DP} alt="" className="dp" />
+									</div>
+								</div>
+								<div className="col-xs-12 col-sm-9 col-md-9 col-lg-10 start-xs start-sm">
+									<h2>Let me introduce myself</h2>
+									<p>
+										- Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+										incidunt, nemo magni quo odio sequi recusandae repudiandae.
+										Quo vero numquam quod, at debitis mollitia minus iure in
+										suscipit ullam repellat.
+										<br />
+										<a
+											href={ResumePDF}
+											className="btn btn-danger btn-sm"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											Download Resume
+										</a>
+									</p>
+								</div>
+							</div>
 							<div className="row">
 								{/* Row 1 */}
 								<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 start-xs start-sm">
 									<div className="card">
-										<div className="img-frame">
+										{/* <div className="img-frame">
 											<img src={DP} alt="" className="dp" />
-										</div>
+										</div> */}
 										<div className="card-header">
-											<h2>
-												About Me
-												{/* <small>Aspiring Full-Stack Web Developer</small> */}
-											</h2>
+											<h2>Profile</h2>
 										</div>
 										<div className="card-body">
 											<p>
@@ -95,9 +116,9 @@ class Profile extends Component {
 								{/* Badge 4 */}
 								<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 start-xs start-sm">
 									<div className="card">
-										<div className="img-frame">
-											<img src={Ragnarok} alt="" className="dp zoom-1" />
-										</div>
+										{/* <div className="img-frame">
+											<img src={DP} alt="" className="dp zoom-1" />
+										</div> */}
 										<div className="card-header">
 											<h2>
 												Academic Achievements
@@ -166,13 +187,10 @@ class Profile extends Component {
 													<i className="fa fa-chevron-right"></i>
 												</th>
 												<td>
-													<b>OJT - PHP Developer</b>
+													<b>Our Lady of Peace School</b>
 													<br />
-													<small>Firenze Corporation | Jun - Sep 2014</small>
-													<p>
-														Lorem ipsum dolor sit, amet consectetur adipisicing
-														elit. Facilis, saepe?
-													</p>
+													<small>Antipolo City</small>
+													<p>High School Diploma, Class of 2010</p>
 												</td>
 											</tr>
 										</tbody>

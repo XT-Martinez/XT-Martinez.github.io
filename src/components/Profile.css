@@ -8,8 +8,8 @@
 	background-color: #273445;
 	/* background-color: #6f8d3e; */
 	color: #fff;
-	padding-top: 100px;
-	padding-bottom: 65px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 #Profile table tr th {
@@ -24,11 +24,12 @@
 #Profile .img-frame {
 	overflow: hidden;
 	display: inline-block;
-	z-index: 1;
-	position: relative;
+	/* z-index: 1; */
+	/* position: relative; */
 	border-radius: 100%;
 
-	margin-top: -100px;
+	/* margin-top: -100px; */
+	margin-bottom: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.15);
 	box-sizing: border-box;
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
@@ -38,6 +39,7 @@
 }
 
 #Profile img.dp {
+	/* height: 135px; */
 	height: 125px;
 	vertical-align: middle;
 }
@@ -64,8 +66,15 @@
 }
 
 #Profile .divider {
-	height: 0;
-	margin-top: 50px;
-	margin-bottom: 120px;
-	/* border-top: 1px solid rgba(255, 255, 255, 0.15); */
+	height: 25px;
+}
+
+#About {
+	margin-bottom: 10px;
+}
+
+#About h2 {
+	padding: 0;
+	margin: 0;
+	/* margin-top: 10px; */
 }

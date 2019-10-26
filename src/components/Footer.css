@@ -14,6 +14,6 @@
 	color: #fff;
 }
 
-#Footer a:hover {
+#Footer .copyright a:hover {
 	text-decoration: underline;
 }
