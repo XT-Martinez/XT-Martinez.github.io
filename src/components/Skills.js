@@ -24,10 +24,11 @@ class Skills extends Component {
 				proficiency: 7,
 				description: (
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-						ab libero inventore excepturi pariatur dignissimos asperiores
-						dolores nesciunt, perferendis placeat eligendi sed repellat
-						incidunt. Dolorum enim sed accusantium rem obcaecati!
+						I used Bootstrap framework extensively in my previous projects which
+						made me familiar with grid layout and responsive design. I'm also
+						knowledgeable with flexbox layout. However, I have little experience
+						with CSS preprocesors such as SASS and LESS which I'm currently
+						teaching myself.
 					</p>
 				)
 			},
@@ -59,7 +60,7 @@ class Skills extends Component {
 			},
 			{
 				name: "database",
-				label: "Database",
+				label: "SQL",
 				proficiency: 8,
 				description: (
 					<p>
@@ -76,9 +77,10 @@ class Skills extends Component {
 				proficiency: 7,
 				description: (
 					<p>
-						I started diving into Linux back when Ubuntu 12.04 was released.
-						Since then, a linux distro has been my daily driver which made me
-						more familiar with command-line interface (CLI). Now, I'm using{" "}
+						I started using Linux back when Ubuntu 12.04 was released. Since
+						then, a linux distro has been my daily driver which made me more
+						familiar with command-line interface (CLI) and some linux commands.
+						Now, I'm using{" "}
 						<a
 							key="1"
 							href="https://silverblue.fedoraproject.org/"
@@ -101,7 +103,7 @@ class Skills extends Component {
 				<div className="container container-fluid">
 					<div className="row">
 						<div className="col-xs-12 center-xs">
-							<h1 className="title">Core Skills</h1>
+							<h2 className="title">Technology Stack</h2>
 						</div>
 						{this.state.skills.map(skill => {
 							return (

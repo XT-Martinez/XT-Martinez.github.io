@@ -41,7 +41,19 @@
 #Profile img.dp {
 	/* height: 135px; */
 	height: 125px;
+	width: 125px;
 	vertical-align: middle;
+}
+
+@media (max-width: 350px) {
+	#Profile img.dp {
+		height: 75px;
+		width: 75px;
+	}
+
+	#About h2 {
+		font-size: 1.1rem;
+	}
 }
 
 .dp.zoom-1 {
@@ -65,12 +77,27 @@
 	/* margin-bottom: 50px; */
 }
 
+.card-body p {
+	line-height: 2.2rem;
+}
+
 #Profile .divider {
 	height: 25px;
 }
 
 #About {
 	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+#About .img-frame {
+	flex-shrink: 0;
+}
+
+#About .about-caption {
+	padding-left: 1rem;
 }
 
 #About h2 {
