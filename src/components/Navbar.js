@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
-import avatar from "../assets/DP.jpg";
+import avatar from "../assets/dp2.jpg";
 import ClassNames from "classnames";
 
 class Navbar extends Component {
@@ -9,7 +9,9 @@ class Navbar extends Component {
 	};
 
 	handleBurgerMenuToggle = e => {
-		this.setState({ burgerMenuToggle: !this.state.burgerMenuToggle });
+		this.setState(prevState => ({
+			burgerMenuToggle: !prevState.burgerMenuToggle
+		}));
 	};
 
 	render() {
@@ -32,14 +34,14 @@ class Navbar extends Component {
 								C<span className="primary-text">M</span>
 							</div>
 						</div>
+						<div
+							className="hamburger-btn"
+							onClick={this.handleBurgerMenuToggle}
+						>
+							<i className="fa fa-bars "></i>
+						</div>
 						{/* Links */}
 						<nav className={navLinksClassName}>
-							<div
-								className="hamburger-btn"
-								onClick={this.handleBurgerMenuToggle}
-							>
-								<i className="fa fa-bars "></i>
-							</div>
 							<ul className="link-list">
 								<li>
 									<a href="#Profile">

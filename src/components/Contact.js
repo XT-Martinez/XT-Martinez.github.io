@@ -43,6 +43,16 @@ class Contact extends Component {
 					>
 						<i className="fa fa-twitter circle-icon"></i>
 					</a>
+					{/* Instagram */}
+					<a
+						href="https://instagram.com/xt_martinez/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="icon-link"
+						title="Instagram"
+					>
+						<i className="fa fa-instagram circle-icon"></i>
+					</a>
 					{/* GitHub */}
 					<a
 						href="https://github.com/XT-Martinez/"
