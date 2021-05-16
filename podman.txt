@@ -1,1 +1,0 @@
-podman run -dt --name portfolio -v /var/home/chmartin/Projects/XT-Martinez.github.io:/app -w /app --network=host --pod new:portfoliopod node:10.16-alpine
