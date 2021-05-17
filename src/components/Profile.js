@@ -21,11 +21,12 @@ class Profile extends Component {
                 <div className="about-caption col-xs-12 col-sm-12 col-md-9 center-xl-10">
                   <h2>Let me introduce myself</h2>
                   <p>
-                    Hi there! I'm Christian Joel M. Martinez and I'm a 26 year
-                    old aspiring full-stack web developer. I recently left my
-                    job as a SAP functional analyst to pursue a career in web
-                    development. I've written a short blog below on how I ended
-                    up leaving my job.
+                    I'm Christian Joel M. Martinez, a 27 year old
+                    full-stack/.NET web developer. Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Recusandae eius iusto unde,
+                    itaque laudantium reiciendis corrupti iste veniam soluta!
+                    Reprehenderit odit consectetur in distinctio ex, fugit
+                    dolorum dolore tempora aliquid?
                     <br />
                     {/* <a
                       href={ResumePDF}
@@ -58,6 +59,23 @@ class Profile extends Component {
                           <i className="fa fa-chevron-right"></i>
                         </th>
                         <td>
+                          <b>Full-Stack/.NET Developer</b>
+                          <br />
+                          <small>iRely Philippines Inc. | 2019 - Present</small>
+                          <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Praesentium perferendis nemo vel labore
+                            repellat dolores corrupti delectus asperiores ad!
+                            Aut distinctio nihil ad. Consequuntur quasi esse
+                            facere velit delectus. Nisi.
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <i className="fa fa-chevron-right"></i>
+                        </th>
+                        <td>
                           <b>SAP MM Functional Analyst</b>
                           <br />
                           <small>Accenture Inc. | 2016 - 2019</small>
@@ -67,10 +85,6 @@ class Profile extends Component {
                             project work experience where I translated business
                             requirements into functional and technical
                             specifications in SAP.
-                          </p>
-                          <p>
-                            You may find more details about my work experience
-                            in my resume.
                           </p>
                         </td>
                       </tr>
